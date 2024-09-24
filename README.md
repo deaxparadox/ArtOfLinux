@@ -9,5 +9,12 @@ Repository for Learning About C.
 - [Linux Programming](104-linux-programming/README.md)
 - [Socket Programming](105-socket-programming/README.md)
 - [Sed, Awk, and Gawk](106-sed-awak/README.md)
-- [Root Filesystem](102-root-structure/README.md)
+- [Root Structure](102-root-structure/README.md)
 - [Filesystem Heirarchy Standard](108-linux-fhs/README.md)
+
+
+
+
+### Content for 
+
+- CLI Prompt Configuration
