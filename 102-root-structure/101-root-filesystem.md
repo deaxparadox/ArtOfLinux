@@ -15,8 +15,7 @@
 - [Looking in Linux filesystem](#looking-in-linux-filesystem)
 - [Root Drive](#root-drive)
 - [Root filesystem Hierarchy](#root-filesystem-hierarchy)
-- [Home Directory (~)](#home-directory--tidle)
-- [User Identifier (~)](#user-identifier-cli-user-identifier)
+    - [Common linux directory names](#common-linux-directory-names)
 
 
 ### Looking in Linux filesystem
@@ -96,24 +95,3 @@ These directory names are based upon the Filesystem Hierarchy Standard (FHS).
 When you login to your system and reach a shell CLI prompt, you session starts in your home directory. Your home directory is a unique directory assigned to you user account.
 
 
-
-### Absolute directory references   
-
-You can reference a directory name within a virtual directory system using an *absolute directory reference*. The absolute directory reference defines exactly where the directory is in the virtual directory structure, starting at the root.
-
-Absolute directory reference always begins with a forward slash (**/**), indicating the virtual direcotry system's root.
-
-To reference  user binaries (executable files), contained within the  **bin** directory stored within the **usr** directory, you would use an absolute directory reference as follows:
-
-```
-/usr/bin
-```
-
-To move to a specific location in the filesystem using the absolute directory reference, you just specify the full pathname.
-
-```sh
-paradox@paradox:~$ cd /usr/bin
-paradox@paradox:/usr/bin$
-```
-
-Notice in the preceeding example that the prompt originally had a tidle (~) it it. After the change to a new directory occured, the tidle was replace with **/usr/bin**. This is where a CLI prompt can help you keep track of where you are in the virtual directory structure.

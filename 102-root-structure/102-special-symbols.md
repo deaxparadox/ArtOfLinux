@@ -12,8 +12,8 @@
 - [Root directory](#root-directory--root-directory)
 - [Home directory](#home-directory--tidle)
 - [User identifier](#user-identifier-cli-user-identifier)
-- [Single period]()
-- [Double period]()
+- [Period](#period)
+- [Ampersand](#ampersand-)
 
 ### Root Directory (/) {root-directory}
 
@@ -45,8 +45,46 @@ Normal users are regular users, who can use the system, but can't make any chang
 
 When you open a teminal session, you see a prompt with **$** or **#**.
 
+- **$**: represents the regular user.
 
-#### Dollar ($)
+```bash
+paradox@paradox:~$ 
+```
+
+- **#**: represents the root user.
+
+
+```bash
+paradox@paradox:~# 
+```
+
+### Period
+
+- **.**: The single dot (.) represent the current directory
+
+- **..**: The double dot (..) represent the parent directory
+
+### Dollar ($)
+
+##### Terminal shell prompt
 
 If you open a terminal session, as a normal user (with out using sudo or any administrative priviledges), then prompt in the terminal with contains $.
 
+```bash
+paradox@paradox:~$ 
+```
+
+##### User variable
+
+Dollar is also used while called the shell variable.
+
+```bash
+paradox@paradox:~$ echo $PATH
+/home/paradox/.nvm/versions/node/v20.17.0/bin:/home/paradox/.pyenv/shims:/home/paradox/.pyenv/bin:/home/paradox/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+```
+
+
+### Ampersand (&)
+
+- &: is use for starting a process in the background.

@@ -1,4 +1,7 @@
 # Root Structure
 
-- [Root filesystem](root-filesystem.md)
-- [Special Symbols](special-symbols.md)
+- [Root filesystem](101-root-filesystem.md)
+- [Special Symbols](102-special-symbols.md)
+- [Directory Refrencing](103-directory-referencing.md)
+- [I/O redirection](104-io-redirection.md
+)
