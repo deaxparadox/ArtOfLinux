@@ -2,7 +2,7 @@
 
 ----------
 
-[<<< Navigating filesystem](101-nzavigating-file-system.md) | [ >>>](103.md)
+[<<< Navigating filesystem](101-navigating-file-system.md) | [ >>>](103.md)
 
 ----------
 
@@ -17,4 +17,4 @@
 
 To see what files are available on the system, use the *list* command (ls) or *directory* command (dir)
 
-### Display a basic listing
+
