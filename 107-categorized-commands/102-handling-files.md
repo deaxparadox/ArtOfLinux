@@ -1,20 +1,23 @@
-# Listing Files and Directories.
+# File handling
+
+##### File handling in the Linux filesystem.
+
 
 ----------
 
-[<<< Navigating filesystem](101-navigating-file-system.md) | [ >>>](103.md)
+##### Table of contents
+
+
+- [What is file handling?](#what-is-file-handling)
+- [Traversing directory](#traversing-directories)
+- [Checking you current location](#checking-you-current-location)
+- [Listing files and directories](#listing-files-and-directories)
+
+
+[<<< Navigating filesystem](101-navigating-file-system.md) | [ >>>](102-handling-files.md)
+
 
 ----------
 
 
-### Table of content
-
-- [Introduction](#introduction)
-- [Display a basic listing](#display-a-basic-listing)
-
-
-### Introduction
-
-To see what files are available on the system, use the *list* command (ls) or *directory* command (dir)
-
-
+### What is file handling?

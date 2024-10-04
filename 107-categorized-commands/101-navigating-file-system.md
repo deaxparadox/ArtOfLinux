@@ -1,18 +1,25 @@
 
 # Navigating the Filesystem
 
-----------
-
-[<<< README](README.md) | [Handling files >>>](102-handling-files.md)
+#####  Navigate and explore the filesystem using various Linux command.
 
 ----------
 
+##### Table of contents
 
-### Table of contents
 
+- [What is navigation commands?](#what-is-navigation-commands)
 - [Traversing directory](#traversing-directories)
 - [Checking you current location](#checking-you-current-location)
 - [Listing files and directories](#listing-files-and-directories)
+
+
+[<<< Command usage](README.md) | [Handling files >>>](102-handling-files.md)
+
+
+----------
+
+### What is navigation commands?
 
 Navigation commands used to explore the areas in the Linux system. When you into the system and reach the shell command prompt you are usually placed in your home directory. Therefore, you can use navigation commands to explore the filesystem.
 
@@ -89,7 +96,7 @@ The *long listing* format gives details such as *permission* , *user*,  *group*,
 
 For the detail usage of *ls* command visited [ls usage](/101-command/101-ls.md)
 
-### dir
+##### dir
 
 The next command which we can use for listing content is *dir*. 
 

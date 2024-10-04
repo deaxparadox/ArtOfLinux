@@ -142,8 +142,10 @@ List of all the command available on linux.
 - passwd
 - ping
 - pkill
+- popd
 - printenv
 - ps
+- pushd
 - pwd
 
 ### R
