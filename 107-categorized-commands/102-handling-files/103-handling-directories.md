@@ -4,9 +4,11 @@
 
 ### Table of contents
 
-- Create a directory
+- [Creating a directory](#creating-a-directory)
+    - [Creating mulitple directories](#creating-multiple-directories)
+    - [Creating hidden directory](#create-a-hidden-directory)
 - Remove a directory
-- Move a directory 
+- Move a directory
 - Copy a directory
 
 ----------
@@ -65,6 +67,49 @@ paradox@paradox:~$
 
 Here, we have also used verbose argument of getting display of work. Since directory photo doesnot exists, so mkdir command first created directory "photo" and then it created directory "summertrip".
 
-### Create a hidden directory
+##### Create a hidden directory
 
-We know that in the linux file system, 
+Let's create a hidden directory:
+
+```bash
+paradox@paradox:~$ mkdir .hidden -v
+mkdir: created directory '.hidden'
+paradox@paradox:~$ 
+```
+
+We have created a hidden directory named *.hidden*, and to view the hidden diretory you have  to run *ls* command with *-a* argument.
+
+```bash
+paradox@paradox:$ ls -al
+total 28
+drwxrwxr-x  7 paradox paradox 4096 Oct  7 05:17 .
+drwxrwxrwx 14 root    root    4096 Oct  4 06:04 ..
+drwxrwxr-x  2 paradox paradox 4096 Oct  5 00:41 a
+drwxrwxr-x  2 paradox paradox 4096 Oct  5 00:41 b
+drwxrwxr-x  2 paradox paradox 4096 Oct  5 00:41 c
+drwxrwxr-x  2 paradox paradox 4096 Oct  7 05:17 .hidden
+drwxrwxr-x  3 paradox paradox 4096 Oct  5 00:46 personal
+paradox@paradox:~$ 
+```
+
+
+### Moving directory
+
+If you can move a directory from one location to another location in the Linux filesystem. You can use `mv` command. To use the *mv* command you have to provide the *source* (the directory you want to move), and *destination*
+
+```bash
+paradox@paradox:~$ mv a .hidden/ -v
+renamed 'a' -> '.hidden/a'
+paradox@paradox:~$ mv b .hidden/ -v
+renamed 'b' -> '.hidden/b'
+paradox@paradox:~$ ls .hidden/
+a  b
+paradox@paradox:~$ 
+```
+
+We have moved the directories to new location.
+
+Let's move directory 'a' and 'b' to the ".hidden" directory.
+
+```bash
+```

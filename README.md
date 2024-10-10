@@ -2,7 +2,7 @@
 
 Repository for Learning About C.
 
-- [Learn](108-learn/README.md)
+- [Learn](107-categorized-commands/README.md)
 - [Shell scripting](103-shell-scripting/README.md)
 - [Commands](101-command/README.md)
 - [Categorized Commands](107-categorized-commands/README.md)

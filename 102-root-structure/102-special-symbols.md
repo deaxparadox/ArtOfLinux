@@ -60,9 +60,14 @@ paradox@paradox:~#
 
 ### Period
 
-- **.**: The single dot (.) represent the current directory
 
-- **..**: The double dot (..) represent the parent directory
+#####  **.**
+- The single dot (.) represent the current directory
+- If used, as the first character in filename, while creating a file. Then, that file will be known as hidden file (same applicable to directory).
+
+#####
+
+-  **..**: The double dot (..) represent the parent directory
 
 ### Dollar ($)
 
