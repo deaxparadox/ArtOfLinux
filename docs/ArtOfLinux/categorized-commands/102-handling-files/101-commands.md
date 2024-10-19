@@ -111,5 +111,10 @@ Used to remove **empty** directory in the Linux filesystem. Syntax for "rmdir" i
 $ rmdir <dir 1> <dir 2> <dir 3> ... <dir n>
 ```
 
+##### `rm -rf` command
+
+The **rm -f** is the sub-command of **rm** command, it is used for removing directory with content.
+
+
 
 [<<< Navigating filesystem](../101-navigating-file-system.md) | [File handling >>>](102-handling-files.md)

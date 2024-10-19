@@ -92,4 +92,7 @@ paradox@paradox:~$ echo $PATH
 
 ### Ampersand (&)
 
-- &: is use for starting a process in the background.
+The ampersand (**&**) has the following uses cases in the linux environment.
+
+- is use for starting a process in the background.
+- Also used for IO redirection.

@@ -2,16 +2,15 @@
 
 Repository for Learning About C.
 
-- [Learn](107-categorized-commands/README.md)
-- [Shell scripting](103-shell-scripting/README.md)
-- [Commands](101-command/README.md)
-- [Categorized Commands](107-categorized-commands/README.md)
-- [Linux Programming](104-linux-programming/README.md)
-- [Socket Programming](105-socket-programming/README.md)
-- [Sed, Awk, and Gawk](106-sed-awak/README.md)
-- [Root Structure](102-root-structure/README.md)
-- [Filesystem Heirarchy Standard](108-linux-fhs/README.md)
-
+- [Learn](/docs/ArtOfLinux/categorized-commands/README.md)
+- [Shell scripting](/docs/ArtOfLinux/shell-scripting/README.md)
+- [Commands](/docs/ArtOfLinux/command/README.md)
+- [Categorized Commands](/docs/ArtOfLinux/categorized-commands/README.md)
+- [Linux Programming](/docs/ArtOfLinux/linux-programming/README.md)
+- [Socket Programming](/docs/ArtOfLinux/socket-programming/README.md)
+- [Sed, Awk, and Gawk](/docs/ArtOfLinux/sed-awak/README.md)
+- [Root Structure](/docs/ArtOfLinux/root-structure/README.md)
+- [Filesystem Heirarchy Standard](/docs/ArtOfLinux/linux-fhs/README.md)
 
 
 
