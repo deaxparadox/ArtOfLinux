@@ -161,6 +161,7 @@ List of all the command available on linux.
 - sort
 - ss
 - ssh
+- [stat](stat.md): Display file or filesystem status.
 - su
 - sudo
 - systemctl

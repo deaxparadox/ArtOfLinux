@@ -9,7 +9,7 @@ Repository for Learning About C.
 - [Linux Programming](/docs/ArtOfLinux/linux-programming/README.md)
 - [Socket Programming](/docs/ArtOfLinux/socket-programming/README.md)
 - [Sed, Awk, and Gawk](/docs/ArtOfLinux/sed-awak/README.md)
-- [Root Structure](/docs/ArtOfLinux/root-structure/README.md)
+- [Linux filesystem](/docs/ArtOfLinux/linux-filesystem//README.md)
 - [Filesystem Heirarchy Standard](/docs/ArtOfLinux/linux-fhs/README.md)
 
 

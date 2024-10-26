@@ -6,6 +6,13 @@
 - [Symbolic link](#symbolic-link)
 - [Hard link](#hard-link)
 
+##### Prerequisite
+
+<!-- This block should be in warning container, with small text -->
+
+- [Inode in linux filesystem](/docs/ArtOfLinux/linux-filesystem/inodes.md)
+
+
 ### Introduction
 
 Linking files is a great option available in the linux filesystem. If you need to maintain two (or more) copies of the same file on the system, instead of having separate physical copies, you can use one physical copy and mulitple virtual copies, called *links*. 
@@ -19,8 +26,8 @@ In the windows system, we must have used *shortcuts*, which are used in the Desk
 
 Similarly, a link is a placeholder in a directory that points to the real location of the file. Two types of file links are available in the Linux:
 
-1. [Symbolic link](symbolic-link)
-2. A hard link
+1. [Symbolic link](#symbolic-link)
+2. [Hard link](#hard-link)
 
 
 ### Symbolic link
@@ -58,25 +65,92 @@ One thing to remember, while creating the symbolic, you have to provide the full
 
 ### Hard link
 
-A *hard link* creates a separated virtual file that contains information about the original file and where to locate it. However, they are physically the same file. When you reference the hard link file, it's just as if you're referncing the original file.
+A *hard link* creates a separated virtual file that contains information about the original file and where to locate it. However, they are physically the same file. When you reference the hard link file, it's just as if you're referncing the original file. 
 
-To create  a hard link, againg the original file must pre-exist, except that this time on parameter is needed on the *ln* command. We have text file *allpdf.txt* and we are going to create a *hard link* *allpdf2*.
+In other words, when we're creating a hard link, we're creating another file (with a different name) that points to the exact same data as the original file. That means it acts as the original file, and you cannot differentiate between the new hard link and original name of the file. 
+
+It's basically a mirror copy of the original file. They both have the same content, permissions, and inode address. Be aware that any changes made in one file affect the other file in same way, except for deletion, which will not impact the original data. When you delete the original file, and there's at least one hard link alive, you can still access the original data untill all hardlinks have been deleted.
+
+##### Usage
+
+To create  a hard link, again the original file must pre-exist, except that this time no parameter is needed on the *ln* command. We have a file *install-docker.sh* and we are going to create a hard link *install-docker-hl.sh* to our original file.
 
 ```bash
-paradox@paradox:~$ ls -l
-total 1836
--rw-rw-r-- 2 paradox paradox 931112 Oct 22 07:59 allpdf
--rw-rw-r-- 2 paradox paradox 931112 Oct 22 07:59 allpdf2
+paradox@paradox:~$ ln install-docker.sh install-docker-hl.sh 
+paradox@paradox:~$ 
+
+```
+
+We have learn about hard link earlier, that it is similar to original files. If we check the *inode number* of both files, it would be same:
+
+```bash
+paradox@paradox:~$ ls -il
+9438203 -rw-rw-r--  2 paradox paradox      586 Aug  7 11:14 install-docker-hl.sh
+9438203 -rw-rw-r--  2 paradox paradox      586 Aug  7 11:14 install-docker.sh
 paradox@paradox:~$ 
 ```
 
-We have learn about hard link earlier, that it is similar to original files. If we check the *inode number*  of both files, it would be same:
+As you can see *inode* number of both files are same and there is no referencing pointer (`->`), which was present in soft link, pointing to original file location.
+
+
+Now, let's edit out hard link. We're going to add a comment in it. After that we are going to check our original file for changes. Firstly, we are going to check content of the original file **install-docker.sh** :
 
 ```bash
-paradox@paradox:~$ ls -il allpdf allpdf2
-1616799 -rw-rw-r-- 2 paradox paradox 931112 Oct 22 07:59 allpdf
-1616799 -rw-rw-r-- 2 paradox paradox 931112 Oct 22 07:59 allpdf2
+paradox@paradox:~$ cat install-docker.sh 
+# Add Docker's official GPG key:
+sudo apt-get update
+    ...
+sudo apt-get update
 paradox@paradox:~$ 
 ```
 
-As you can see *inode* number of both files are same.
+You can also display content of hard link (we didn't display here because both file and link share same cotent, you can try to display yourself).
+
+Adding comment "docker repository added successfully" at the end of hard link 
+
+**install-docker-hl.sh**:
+
+```bash
+paradox@paradox:~$ echo "# docker repository added successfully" >> install-docker-hl.sh 
+paradox@paradox:~$ cat install-docker-hl.sh 
+# Add Docker's official GPG key:
+sudo apt-get update
+    ...
+sudo apt-get update
+# docker repository added successfully
+paradox@paradox:~$ 
+
+```
+
+Now, let's see the original content:
+
+```bash
+paradox@paradox:~$ cat install-docker.sh 
+# Add Docker's official GPG key:
+sudo apt-get update
+    ...
+sudo apt-get update
+# docker repository added successfully
+paradox@paradox:~$ 
+
+```
+
+As we can see the content in both the files is same, because they share the same inode number.
+
+
+
+##### Limitations
+
+Hard links have limitations, You cannot create hard links for directories or create a hard link in a different filesystem from the original file.
+
+
+----------
+
+##### Command used
+
+[ln](https://)  [ls](https://)  [echo](https://)  [cat](https://)  [redirection (>>)](https://)
+
+##### Reference
+
+- [Linux command line and shell scripting: bible 1](https://)
+- [https://www.redhat.com/en/blog/hard-links-linux](https://www.redhat.com/en/blog/hard-links-linux)
