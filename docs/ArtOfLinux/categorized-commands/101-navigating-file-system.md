@@ -94,7 +94,7 @@ paradox@paradox:~$
 
 The *long listing* format gives details such as *permission* , *user*,  *group*, etc. 
 
-For the detail usage of *ls* command visited [ls usage](/101-command/101-ls.md)
+For the detail usage of *ls* command visited [ls usage](../command-list/101-ls.md)
 
 ##### dir
 

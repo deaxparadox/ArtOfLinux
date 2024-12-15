@@ -1,19 +1,12 @@
 # ArtOfLinux
 
-Repository for Learning About C.
+This is a large repository to learn about Computer science. Consist of C, C++, DSA, Docker, Kubernetes, and other tools, techniques and skills required for Software developer enginner. Working is progress.
 
-- [Learn](/docs/ArtOfLinux/categorized-commands/README.md)
-- [Shell scripting](/docs/ArtOfLinux/shell-scripting/README.md)
-- [Commands](/docs/ArtOfLinux/command/README.md)
-- [Categorized Commands](/docs/ArtOfLinux/categorized-commands/README.md)
-- [Linux Programming](/docs/ArtOfLinux/linux-programming/README.md)
-- [Socket Programming](/docs/ArtOfLinux/socket-programming/README.md)
-- [Sed, Awk, and Gawk](/docs/ArtOfLinux/sed-awak/README.md)
-- [Linux filesystem](/docs/ArtOfLinux/linux-filesystem//README.md)
-- [Filesystem Heirarchy Standard](/docs/ArtOfLinux/linux-fhs/README.md)
-
-
-
-### Content for 
-
-- CLI Prompt Configuration
+- [Linux](/docs/ArtOfLinux/README.md)
+- [C](/docs/ArtOfC/README.md)
+- [Cpp](/docs/ArtOfCpp/README.md)
+- [Rust](/docs/ArtOfRust/README.md)
+- [DSA](/docs/ArtOfDSA/README.md)
+- [Docker](/docs/ArtOfDocker/README.md)
+- [Kubernetes](/docs/ArtOfKubernete/README.md)
+- [Software developer enginner](docs/ArtOfSDE/README.md)
