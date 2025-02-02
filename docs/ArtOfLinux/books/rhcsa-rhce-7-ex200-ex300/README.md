@@ -7,3 +7,4 @@
     - [Executing commands](102-using-essential-tools/executing-command.md)
     - [I/O Redirection](102-using-essential-tools/io-redirection.md)
     - [History](102-using-essential-tools/history.md)
+    - [Bash Completion](102-using-essential-tools/bash-completion.md)
